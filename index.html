@@ -9,21 +9,37 @@
 <body>
   <div class="app">
     <h1 class="title">테트리스</h1>
+
     <div class="game-container">
       <div id="board" class="board" aria-label="게임 보드"></div>
+
       <aside class="sidebar">
         <section class="panel score-panel">
           <h2>점수</h2>
           <p id="score" class="score-value">0</p>
           <p id="game-status" class="game-status hidden" role="status" aria-live="polite"></p>
         </section>
+
         <section class="panel button-panel">
           <button id="start-btn" type="button">시작</button>
           <button id="restart-btn" type="button">재시작</button>
         </section>
+
+        <section class="panel controls-panel">
+          <h2>조작법</h2>
+          <ul>
+            <li><kbd>←</kbd> ArrowLeft — 왼쪽 이동</li>
+            <li><kbd>→</kbd> ArrowRight — 오른쪽 이동</li>
+            <li><kbd>↓</kbd> ArrowDown — 한 칸 빠르게 내리기</li>
+            <li><kbd>↑</kbd> ArrowUp — 회전</li>
+            <li><kbd>Space</kbd> — 즉시 낙하 (hard drop)</li>
+          </ul>
+          <p class="controls-note">시작 버튼을 누른 뒤 키보드로 조작합니다.</p>
+        </section>
       </aside>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
